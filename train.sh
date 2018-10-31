@@ -1,4 +1,4 @@
-DATA_DIR=tensorflow-shakespeare-master
+DATA_DIR=tensorflow-shakespeare-master/tensorflow-shakespeare-master/data
 MODEL_DIR=models
 rm -Rf $MODEL_DIR
 mkdir -p $MODEL_DIR

@@ -7,8 +7,7 @@ python3 -m sockeye.train\
                        --target $DATA_DIR/shakespeare/sparknotes/merged/originalTraining.snt.aligned \
                        --encoder cnn \
                        --decoder cnn \
-                       --rnn-num-hidden 512 \
-					   --max-num-epochs 300 \ 
+                       --rnn-num-hidden 512 \ 
                        --validation-source $DATA_DIR/shakespeare/sparknotes/merged/modernValidation.snt.aligned \
                        --validation-target $DATA_DIR/shakespeare/sparknotes/merged/originalValidation.snt.aligned \
                        --output $MODEL_DIR \

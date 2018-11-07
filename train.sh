@@ -12,4 +12,4 @@ python3 -m sockeye.train\
                        --validation-target $DATA_DIR/shakespeare/sparknotes/merged/originalValidation.snt.aligned \
                        --output $MODEL_DIR \
                        --decode-and-evaluate 500 \ 
-					   --initial-learning-rate .0001 
+					   ##--initial-learning-rate .0001 

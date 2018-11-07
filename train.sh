@@ -7,10 +7,13 @@ python3 -m sockeye.train\
                        --target $DATA_DIR/shakespeare/sparknotes/merged/originalTraining.snt.aligned \
                        --encoder cnn \
                        --decoder cnn \
-                       --rnn-num-hidden 512 \
+					   --cnn-activation-type relu \
+					   --optimizer adam \
+					   --rnn-attention-type bilinear \
+                       --rnn-num-hidden 256 \
 					   --max-num-epochs 300 \ 
                        --validation-source $DATA_DIR/shakespeare/sparknotes/merged/modernValidation.snt.aligned \
                        --validation-target $DATA_DIR/shakespeare/sparknotes/merged/originalValidation.snt.aligned \
                        --output $MODEL_DIR \
                        --decode-and-evaluate 500 \ 
-					   --initial-learning-rate .0001 
+					   ##--initial-learning-rate .0001 

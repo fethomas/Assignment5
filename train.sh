@@ -10,7 +10,7 @@ python3 -m sockeye.train\
 					   --cnn-activation-type relu \
 					   --optimizer adam \
 					   --rnn-attention-type bilinear \
-                       --rnn-num-hidden 256 \
+                       --rnn-num-hidden 512 \
 					   --max-num-epochs 300 \ 
                        --validation-source $DATA_DIR/shakespeare/sparknotes/merged/modernValidation.snt.aligned \
                        --validation-target $DATA_DIR/shakespeare/sparknotes/merged/originalValidation.snt.aligned \
